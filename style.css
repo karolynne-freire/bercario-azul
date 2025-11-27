@@ -45,10 +45,15 @@ body {
 .navbar .nav-links li a:hover {
     color: #90caf9; 
 }
+
+main{
+        flex: 1;
+}
+
 .main-content {
     flex: 1;
 }
-/* ============ HERO ============ */
+
 .hero {
     margin-top: 50px;
     background-color: #141284; 
