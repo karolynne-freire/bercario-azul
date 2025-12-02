@@ -50,6 +50,39 @@ main{
         flex: 1;
 }
 
+.container {
+    width: 100%;
+    padding: 0 20px; 
+    margin: 0 auto;
+}
+
+#sobre {
+    background-color: white;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #141284;
+}
+
+#sobre h2 {
+    font-size: 1.8rem;
+    color: #0C0B59;
+    font-weight: 700;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #90caf9;
+    padding-bottom: 5px;
+}
+
+#sobre p {
+    color: #0C0B59; 
+    margin-bottom: 15px;
+    text-align: justify;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
 .main-content {
     flex: 1;
 }
@@ -110,13 +143,11 @@ main{
     object-fit: cover;       
 }
 
-
 .card p {
     font-size: 0.85rem;
     opacity: 0.9;
     margin: 10px 0 20px 0;
 }
-
 
 .btn {
     background-color: #0C0B59;
@@ -133,12 +164,82 @@ main{
     background-color: #06052F;
 }
 
-
-
-
 .footer {
     background-color: #0C0B59;
     color: white;
     text-align: center;
     padding: 15px;
+}
+
+#contato {
+    background-color: white; 
+    padding: 40px; 
+    border-radius: 12px;
+    margin: 40px auto; 
+    max-width: 800px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #141284; 
+}
+
+#contato h2 {
+    color: #0C0B59; 
+    font-size: 2.2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #90caf9; 
+    padding-bottom: 10px;
+}
+
+#contato p {
+    color: #333333; 
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #0C0B59; 
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; 
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    border-color: #141284; 
+    outline: none;
+}
+
+.submit-button {
+    background-color: #141284; 
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block; 
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #0C0B59; 
 }
