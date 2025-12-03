@@ -28,13 +28,6 @@ main {
     padding: 40px 0;
 }
 
-.container {
-    width: 100%;
-    padding: 0 20px; 
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
 header {
     background-color: var(--azul-escuro);
     color: white;
@@ -49,12 +42,31 @@ header h1 {
     font-weight: 800;
 }
 
+.container {
+    width: 100%;
+    padding: 0 20px; 
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
 .info-section {
     background-color: white;
     padding: 40px;
     margin-bottom: 30px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-section.intro {
+    text-align: center;
+    border-top: 5px solid var(--azul-marinho);
+}
+
+.info-section.intro p {
+    max-width: 900px; 
+    margin: 0 auto; 
+    font-size: 1.1rem;
+    text-align: unset;
 }
 
 .content-grid {
@@ -86,19 +98,30 @@ header h1 {
 }
 
 .info-section h2 {
-    font-size: 2rem;
+    font-size: 2rem; 
     color: var(--azul-marinho);
-    font-weight: 700;
+    font-weight: 700; 
     margin-bottom: 25px;
-    border-bottom: 3px solid var(--azul-escuro);
+    border-bottom: 2px solid var(--azul-claro);
     padding-bottom: 10px;
+}
+
+.info-section h3 {
+    font-size: 1.5rem;
+    color: var(--azul-escuro);
+    font-weight: 600; 
+    margin-bottom: 15px;
+}
+
+.info-section p {
+    margin-bottom: 15px;
+    text-align: justify;
 }
 
 .img-wrapper {
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border: 3px;
 }
 
 .img-wrapper img {
@@ -106,6 +129,7 @@ header h1 {
     height: auto;
     display: block;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .conheca-mais {
@@ -125,6 +149,7 @@ header h1 {
     font-weight: 700;
     margin-bottom: 10px;
     text-transform: uppercase;
+    color: white; 
 }
 
 .conheca-mais p {
@@ -132,6 +157,7 @@ header h1 {
     max-width: 800px;
     margin: 0 auto 30px auto; 
     line-height: 1.5;
+    color: white; 
 }
 
 .cta-button {
