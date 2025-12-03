@@ -17,7 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
-    background-color: var(--fundo-padrao);
+    background-image: url(img/fundo-pagina.jpg);
     color: var(--cor-texto);
     line-height: 1.6;
 }
@@ -56,8 +56,6 @@ header h1 {
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-
-
 
 .content-grid {
     display: grid;
@@ -151,10 +149,9 @@ header h1 {
 
 .cta-button:hover {
     background-color: white;
-    transform: translateY(-2px);
 }
 
-footer {
+.footer {
     background-color: var(--azul-escuro);
     color: white;
     text-align: center;
