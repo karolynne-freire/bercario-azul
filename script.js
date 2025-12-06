@@ -1,16 +1,12 @@
-// Exemplo simples: ao clicar no card, você pode abrir uma página específica
 document.querySelectorAll(".btn").forEach((btn, index) => {
     btn.addEventListener("click", () => {
         window.location.href = `tela-${index + 1}.html`;
     });
 });
 
-
 // CARROSSEL
 
 const slides = document.querySelectorAll('.slide');
-const botaoAnterior = document.querySelector('.botao-anterior');
-const botaoProximo = document.querySelector('.botao-proximo');
 const bolinhas = document.querySelectorAll('.bolinha');
 
 let indiceAtual = 0;
@@ -40,17 +36,13 @@ function mostrarSlide(indice) {
     bolinhas[indiceAtual].classList.add('bolinha-ativa');
     }
 
-    function irParaSlideAnterior() {
+       function irParaSlideAnterior() {
       mostrarSlide(indiceAtual - 1);
     }
 
     function irParaProximoSlide() {
       mostrarSlide(indiceAtual + 1);
     }
-
-    // Adiciona o evento de clique no botão "anterior e próximo"
-    botaoAnterior.addEventListener('click', irParaSlideAnterior);
-    botaoProximo.addEventListener('click', irParaProximoSlide);
 
     // Para cada bolinha, adiciona um evento de clique
     bolinhas.forEach(function (bolinha) {

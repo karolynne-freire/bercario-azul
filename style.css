@@ -1,4 +1,3 @@
-/* ============ RESET ============ */
 * {
     padding: 0;
     margin: 0;
@@ -6,24 +5,21 @@
     font-family: "Arial", sans-serif;
 }
 
-/* Garante que o html e body ocupem 100% da altura */
 html, body {
     height: 100%;
     margin: 0;
 }
 
-/* Body usa flexbox para organizar o layout */
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* altura mínima 100% da viewport */
+    min-height: 100vh; 
 }
 
-/* ============ NAVBAR ============ */
 .navbar {
     width: 100%;
     padding: 20px 40px;
-    background-color: #0C0B59; /* Azul escuro */
+    background-color: #0C0B59; 
     color: white;
     display: flex;
     justify-content: space-between;
@@ -47,89 +43,44 @@ body {
     font-weight: 500;
 }
 .navbar .nav-links li a:hover {
-    color: #90caf9; /* Azul claro no hover */
+    color: #90caf9; 
 }
-.main-content {
+
+main{
     flex: 1;
 }
-/* ============ HERO ============ */
-.hero {
-    margin-top: 50px;
-    background-color: #141284; 
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-    position: relative;
-    
-    background-image: url("/image\ 1.png");
-    background-repeat: repeat;    
-    background-size: 530px;   
-    background-position: center;
+
+.container-sobre {
+    width: 100%;
+    padding: 0 20px; 
+    margin: 0 auto;
 }
 
-.hero h2 {
-    max-width: 700px;
-    margin: 0 auto 40px auto;
-    font-size: 1.4rem;
-}
-
-/* ============ CARDS ============ */
-.cards-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.card {
-    background-color: #3736A3; 
-    width: 200px;
-    padding: 20px;
+#sobre {
+    background-color: white;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 25px;
     border-radius: 12px;
-    text-align: center;
-    color: white;
-    backdrop-filter: blur(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #141284;
 }
 
-.circle {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    overflow: hidden;         /* ESSENCIAL: recorta imagem dentro da bolinha */
-    margin: 0 auto 15px auto;
-    background-color: #D9D9D9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#sobre h2 {
+    font-size: 1.8rem;
+    color: #0C0B59;
+    font-weight: 700;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #90caf9;
+    padding-bottom: 5px;
 }
 
-.circle img {
-    width: 800px;
-    height: 100px;
-    object-fit: cover;        /* garante recorte perfeito */
-}
-
-
-.card p {
-    font-size: 0.85rem;
-    opacity: 0.9;
-    margin: 10px 0 20px 0;
-}
-
-
-.btn {
-    background-color: #0C0B59;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: 0.3s;
-    text-decoration: none;
-}
-
-.btn:hover {
-    background-color: #06052F;
+#sobre p {
+    color: #0C0B59; 
+    margin-bottom: 15px;
+    text-align: justify;
+    font-size: 1.05rem;
+    line-height: 1.6;
 }
 
 /* ============ CONTAINER PRINCIPAL DO CARROSSEL ============ */
@@ -137,59 +88,49 @@ body {
 .carrossel {
     position: relative;       
     width: 100%;   
-    height: 70vh;             
+    height: 100vh;
+    min-height: 260px;   
+    max-height: 600px;               
     overflow: hidden;         
     border-radius: 0;         
-    background: #0C0B59;    /* Fundo azul (caso imagem não carregue) */
-    margin: 0 auto 30px auto;  /* Centraliza horizontalmente */  
+    background: #0C0B59;    
+    margin: 0 auto 30px auto; 
 }         
 
 .carrossel-texto {
     position: absolute;
-    top: 40%;                     /* distância do topo do carrossel */
+    top: 25%;                  
     left: 50%;
-    transform: translateX(-50%);  /* centraliza horizontalmente */
-    padding: 12px 24px;
+    transform: translateX(-50%);  
+    padding: 8px 16px;
     border-radius: 999px; 
-    text-shadow: 0 2px 6px #141284;    /* Sombra no texto */
+    text-shadow: 0 2px 6px #141284;   
     color: #FFFFFF;
-    font-size: 1.2rem;
+    font-size: clamp(1.4rem, 2.5vw + 0.8rem, 2.2rem); 
     font-weight: bold;
-    z-index: 10;                /* garante que fique acima da imagem e das setas */
+    z-index: 10;              
     text-align: center;
 }
 
 .slide {
-    display: none;     /* Esconde todos os slides por padrão */
+    display: none;    
     width: 100%;
     height: 100%;
-    position: relative; /* Para o véu (::before) */
-}
-
-/* Véu azul por cima da imagem */
-.slide::before {
-    content: "";
-    position: absolute;
-    inset: 0;                            
-    background: rgba(117, 119, 218, 0.45);  /* azul marinho com transparência */
-    pointer-events: none;                 /* não bloqueia cliques */
-    z-index: 1;                           /* acima da imagem, abaixo do texto do carrossel */
+    position: relative; 
 }
 
 .slide img {
     width: 100%;
     height: 100%;                       
-    display: block;                     /* Remove espaço em branco abaixo da imagem */
-    object-fit: cover;                  /* Preenche o espaço mantendo o recorte proporcional */
+    display: block;                    
+    object-fit: cover;                 
     box-shadow: 0 0 0 8px #0C0B59;  
     position: relative;
-    z-index: 0;                        /* Fica por baixo do véu */
+    z-index: 0;                  
 }
 
 /* Deixa o slide visível */
-.slide-ativa {
-    display: block;
-}
+.slide-ativa {display: block;}
 
 .botao {
     position: absolute;                 
@@ -198,22 +139,14 @@ body {
     background: #FFFFFF;              
     color: #0C0B59;                  
     border: none;                       
-    padding: 8px 12px;                  
+    padding: 6px 10px;                  
     cursor: pointer;           
-    font-size: 20px;        
+    font-size: 16px;        
 }
 
 /* Efeito ao passar o mouse nos botões */
 .botao:hover {
     background: rgba(38, 26, 202, 0.301);
-}
-
-.botao-anterior {
-    left: 10px;                     
-}
-
-.botao-proximo {
-    right: 10px;                  
 }
 
 /* Área das bolinhas (indicadores de slide) */
@@ -239,13 +172,405 @@ body {
 
 /* Bolinha ativa (do slide atual) */
 .bolinha-ativa {
-    background-color: #0C0B59;     
+    background-color: #141284;     
 }
 
+/* ============ SESSÃO 2 ============ */
+
+/* Título + texto */
+.secao-descubra{
+    margin: 30px;
+    text-align: left;
+    padding: 30px 20px;
+    position: relative;
+    max-width: 900%; 
+    background-color: #90caf9;
+    border-radius: 12px;
+    border-left: none;
+    box-shadow: 0 4px 12px rgba(12, 11, 89, 0.1);
+    text-align: center;
+}
+
+.secao-descubra h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0C0B59; 
+    margin-bottom: 10px; 
+}
+
+.secao-descubra p {
+    font-size: 1.1rem; 
+    line-height: 1.6;
+    color: #444;
+}
+
+.secao-descubra h6 {
+    margin-top: 15px; 
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.infografico-sequencia {
+    display: flex;
+    flex-direction: column;  
+    align-items: stretch;
+    justify-content: center;
+    gap: 25px;
+    padding: 16px;
+    width: 100%;
+    border-radius: 5px;
+    border-left: 10px solid #0C0B59;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.infografico-sequencia a {
+    text-decoration: none;
+}
+
+/* Card Seção 2 */
+.passo {
+    display: flex;
+    flex-direction: column;    
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 30px 18px;
+    border-radius: 12px;
+    border: 3px solid transparent;
+    background-color: #141284;
+    color: #FFFFFF;
+    width: 80%;
+    min-width: 100px;
+    min-height: 90px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.passo p {
+    color: #FFF000;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.passo:hover {
+    transform: translateY(-8px); /* Levanta mais o card */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2); 
+    border: 3px solid #FFF000;
+}
+
+.icone {
+    font-size: 3em; 
+    transition: transform 0.4s ease; /* Adiciona transição para o ícone */
+}
+
+.passo:hover .icone {
+    transform: scale(1.1) rotate(5deg); /* Animação: aumenta e gira levemente */
+}
+
+/* Conectores (as “setinhas”) */
+.conector {
+    font-size: 4em;
+    font-weight: 900;
+    color: #141284;
+    text-align: center;
+    display: none;  
+}
+
+/* Texto geral */
+p {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.texto.icone {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.passo.ativo {
+    background-color: #FFFFFF;
+    transform: scale(1.05);
+}
+
+
+/* Coloca os cards em linha e mostra os conectores */
+@media (min-width: 768px) {
+    .infografico-sequencia {
+      
+        display: grid;
+        grid-template-columns: 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr;
+        gap: 0; 
+        padding: 30px 20px;
+        border-left: none; 
+    }
+    
+    .infografico-sequencia a {
+        grid-column: span 1; 
+    }
+
+    .conector {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-weight: normal; 
+        color: #0C0B59;
+        content: "→";
+    }
+
+    .secao-descubra h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}
+
+.conheca-mais {
+    background-color: #90caf9; 
+    color: #0C0B59;
+    padding: 50px 0;
+    margin-top: 50px;
+    margin-bottom: 0;
+    border-radius: 0; 
+    width: 100%; 
+}
+
+.container-full {
+    width: 100%;
+    padding: 0 20px; 
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 40px;
+    align-items: center;
+}
+
+.container-recife {
+    padding: 0;
+    margin: 0;
+    overflow: hidden; 
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    justify-self: center; 
+}
+
+.container-recife img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px; 
+}
+
+.conheca-mais h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 25px; 
+    text-align: left; 
+}
+
+.conheca-mais p {
+    font-size: 1.05rem;
+    max-width: 800px;
+    margin: 0 0 40px 0; 
+    line-height: 1.5;
+    text-align: justify; 
+    display: block; 
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #141284; 
+    color: white; 
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:hover {
+    background-color: #0C0B59;
+}
+
+.cta-wrapper {
+    text-align: center; 
+}
+
+.main-content {
+    flex: 1;
+}
+
+.hero {
+    margin-top: 50px;
+    background-color: #141284; 
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    
+    background-image: url("/img/fundo-sessao.png");
+    background-repeat: repeat;    
+    background-size: 530px;   
+    background-position: center;
+}
+
+.hero h2 {
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    font-size: 1.4rem;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #3736A3; 
+    width: 200px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(5px);
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;         
+    margin: 0 auto 15px auto;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle img {
+    width: 800px;
+    height: 100px;
+    object-fit: cover;       
+}
+
+.card p {
+    font-size: 0.85rem;
+    opacity: 0.9;
+    margin: 10px 0 20px 0;
+}
+
+.btn {
+    background-color: #0C0B59;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #06052F;
+}
 
 .footer {
     background-color: #0C0B59;
     color: white;
     text-align: center;
     padding: 15px;
+}
+
+#contato {
+    background-color: white; 
+    padding: 40px; 
+    border-radius: 12px;
+    margin: 40px auto; 
+    max-width: 800px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #141284; 
+}
+
+#contato h2 {
+    color: #0C0B59; 
+    font-size: 2.2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #90caf9; 
+    padding-bottom: 10px;
+}
+
+#contato p {
+    color: #333333; 
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #0C0B59; 
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; 
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    border-color: #141284; 
+    outline: none;
+}
+
+.submit-button {
+    background-color: #141284; 
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block; 
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #0C0B59; 
+}
+
+@media (min-width: 768px) {
+    .container-full {
+        grid-template-columns: 60% 40%; 
+    }
+    
+    .conheca-mais h3, .conheca-mais p {
+        text-align: left; 
+    }
+    
+    .cta-wrapper {
+        text-align: center;
+    }
 }

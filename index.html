@@ -11,15 +11,26 @@
     <nav class="navbar">
         <div class="logo">Berçários Azul</div>
         <ul class="nav-links">
-            <li><a href="#">Início</a></li>
+            <li><a href="index.html">Início</a></li>
             <li><a href="#">Ambientes</a></li>
             <li><a href="#">Sobre</a></li>
             <li><a href="#">Contato</a></li>
         </ul>
     </nav>
+<main>
 
- <div class="main-content">
+   <div>
+        <section id="sobre">
+            <div class="container-sobre">
+                <h2>Sobre o Projeto</h2>
+                <p>O projeto Berçário Azul nasceu da necessidade em conscientizar sobre o papel vital dos ecossistemas costeiros para a vida no planeta. Nossa missão é transformar informações acadêmicas complexas em uma linguagem acessível, mostrando a importância ecológica, social e econômica dos manguezais, recifes de coral e pradarias marinhas.</p></p>
+                <p>Acreditamos que o conhecimento é a principal ferramenta para a conservação. Ao detalhar as ameaças e as soluções sustentáveis, buscamos inspirar a comunidade, pescadores, estudantes e formuladores de políticas públicas a se unirem na proteção desses ambientes únicos.</p>
+            </div>
+        </section>
+    </div> 
     
+    <div class="main-content">
+        
     <section>
         <div class="carrossel">
             <div class="carrossel-texto">
@@ -27,24 +38,18 @@
             </div>
 
             <div class="slide slide-ativa">
-                <img src="/manguezal_seção1.jpg" alt="Manguezal">
+                <img src="/secao1_manguezais.png" alt="Manguezal">
             </div>
             <div class="slide">
-                <img src="/Estuários_seção1.jpg" alt="Estuário">
+                <img src="/secao1_estuários.png" alt="Estuário">
             </div>
             <div class="slide">
-                <img src="/Pradarias_secao1.png" alt="Pradaria">
+                <img src="/secao1_pradarias.png" alt="Pradaria">
             </div>
             <div class="slide">
-                <img src="/Recife_de_corais_seção1.jpg" alt="Recife de Coral">
+                <img src="/secao1_recife_de_corais.png" alt="Recife de Coral">
             </div>
 
-            <button class="botao botao-anterior">
-                ‹
-            </button>
-            <button class="botao botao-proximo">
-                ›
-            </button>
             <div class="indicadores">
                 <!-- data-indice guarda o índice do slide correspondente -->
                 <span class="bolinha bolinha-ativa" data-indice="0"></span>
@@ -55,14 +60,79 @@
         </div>
     </section>
 
+    <section>
+        <div class="secao-descubra">
+            <h2> Descubra como proteger os berçários marinhos</h2>
+            <p> Berçários marinhos são áreas onde muitos animais passam a “infância”. A boa notícia é que não é preciso ser biólogo ou trabalhar em uma ONG para ajudar a protegê-los: pequenas ações, em diferentes ambientes, fazem grande diferença. </p>
+            <h6>Escolha seu contexto e descubra por onde começar:</h6>
+        </div>
+        <div class="infografico-sequencia">
+            <a href="pag2/casa/casa.html">
+                <div class="passo" id="casa">
+                    <span class="icone">🏠</span>
+                    <p>CASA</p>
+                </div>
+            </a>
+            <div class="conector">
+                →
+            </div>
+            <a href="pag3/praia/praia.html">
+                <div class="passo" id="praia">
+                    <span class="icone">🏖️</span>
+                    <p>PRAIA</p>
+                </div>
+            </a>
+            <div class="conector">
+                →
+            </div>
+            <a href="pag4/escola/escola.html">
+                <div class="passo" id="escola">
+                    <span class="icone">📚</span>
+                    <p>ESCOLA</p>
+                </div>
+            </a>
+            <div class="conector">
+                →
+            </div>
+            <a href="pag5/cidade/cidade.html">
+                <div class="passo" id="cidade">
+                    <span class="icone">🏙️</span>
+                    <p>CIDADE</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="conheca-mais">
+            <div class="container-full"> 
+                <div>
+                    <h3>Conheça mais sobre os Berçários Marinhos</h3>
+                    <p>
+                        Os berçários marinhos - como os manguezais, recifes de corais e pradarias marinhas - são ecossistemas fundamentais que oferecem abrigo e condições ideais para o desenvolvimento de inúmeras espécies aquáticas. Essenciais para o equilíbrio ecológico e ambiental do planeta, esses habitats vêm sendo ameaçados pela ação humana, o que compromete a sustentabilidade dos oceanos e a sobrevivência da vida marinha.
+
+                    </p>
+                    <div class="cta-wrapper">
+                        <a href="pag/bercarios/bercarios.html" class="cta-button">
+                            Saiba mais
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container-recife">
+                    <img src="img/recife-de-coral.jpeg" alt="recife-de-coral">
+                </div>
+            </div>
+    </section>
+
+<div class="main-content">
     <section class="hero">
         <h2>Descubra como esses ambientes mantêm o equilíbrio dos oceanos e o futuro do nosso planeta</h2>
 
-        <div class="cards-container">x  
+        <div class="cards-container">
 
 <div class="card">
     <div class="circle">
-<img src="icon-mangue.png" alt="Imagem manguezal">
+<img src="img/icon-mangue.png" alt="Imagem manguezal">
     </div>
     <h3>Manguezais</h3>
     <p>Berços naturais que protegem o litoral e abrigam espécies jovens</p>
@@ -71,43 +141,71 @@
 
             <div class="card">
                 <div class="circle">
-                                    <img src="icon-estuario.png" alt="Imagem manguezal">
+                                    <img src="img/icon-estuario.png" alt="Imagem manguezal">
 
                 </div>
                 <h3>Estuários</h3>
                 <p>Encontro entre rio e mar, ricos em nutrientes e biodiversidade</p>
-                <button class="btn">Explore</button>
+    <a href="pag/estuarios/estuarios.html" class="btn">Explore</a>
             </div>
 
             <div class="card">
                 <div class="circle">
-                                    <img src="icon-pradaria.png" alt="Imagem manguezal">
+                                    <img src="img/icon-pradaria.png" alt="Imagem manguezal">
 
                 </div>
                 <h3>Pradarias</h3>
                 <p>Campos submersos que produzem oxigênio e alimento</p>
-                <button class="btn">Explore</button>
+    <a href="pag/pradarias/pradarias.html" class="btn">Explore</a>
             </div>
 
             <div class="card">
                 <div class="circle">
-                    <img src="icon-corais.png" alt="Imagem manguezal">
+                    <img src="img/icon-corais.png" alt="Imagem manguezal">
                 </div>
                 <h3>Corais</h3>
                 <p>Verdadeiras cidades do mar, cheias de cores e vida.</p>
-                <button class="btn">Explore</button>
+    <a href="pag/corais/corais.html" class="btn">Explore</a>
             </div>
 
         </div>
     </section>
  </div>
 
+ <section id="contato">
+            <h2>Entre em Contato Conosco</h2>
+            <p>
+                Tem dúvidas, sugestões, ou quer colaborar com a pesquisa e conservação dos berçários? Envie-nos uma mensagem!
+            </p>
+            
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Enviar Mensagem</button>
+            </form>
+</section>
+
+</main>
+
     <footer class="footer">
-        <p>© 2025 Berçários Azul — Protegendo os ecossistemas marinhos</p>
+        <p>© 2025 Berçários Azul — Educação e curiosidades sobre ambientes marinhos.</p>
     </footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
-
