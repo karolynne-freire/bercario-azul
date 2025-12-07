@@ -47,7 +47,7 @@ body {
 }
 
 main{
-        flex: 1;
+    flex: 1;
 }
 
 .container-sobre {
@@ -91,7 +91,6 @@ main{
     margin-bottom: 0;
     border-radius: 0; 
     width: 100%; 
-    /* Remove text-align: center para permitir alinhamento do conteúdo */
 }
 
 .container-full {
@@ -100,12 +99,10 @@ main{
     margin: 0 auto;
     max-width: 1200px;
     display: grid;
-    grid-template-columns: 1fr; /* Padrão Mobile: 1 coluna */
+    grid-template-columns: 1fr; 
     gap: 40px;
     align-items: center;
 }
-
-
 
 .container-recife {
     padding: 0;
@@ -160,9 +157,6 @@ main{
     text-align: center; 
 }
 
-
-
-
 .main-content {
     flex: 1;
 }
@@ -186,7 +180,6 @@ main{
     margin: 0 auto 40px auto;
     font-size: 1.4rem;
 }
-
 
 .cards-container {
     display: flex;
