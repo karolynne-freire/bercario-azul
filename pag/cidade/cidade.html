@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berçários Azul</title>
+    <link rel="stylesheet" href="cidade.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Berçários Azul</div>
+        <ul class="nav-links">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Ambientes</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+      <h1>Na sua cidade / comunidade</h1>
+      <p class="subtitulo">Ações coletivas e políticas públicas</p>
+
+      <section class="cards-container">
+        <div class="content-block">
+
+          <!-- CARD 1 -->
+          <article class="card" onclick="mostrarCuriosidade('acoescoletivasBox')">
+            <div class="card-icone">🚮</div>
+              <h2>Mutirões de limpeza</h2>
+            <ul>
+              <li>Participe de mutirões de limpeza</li>
+              <li>Faça o descarte correto dos resíduos</li>
+              <li>Cobre saneamento básico</li>
+            </ul>
+          </article>
+          <article class="card imagem-card"> 
+            <img src="mutirao.jpg" alt="Exemplo de multirão de limpeza" class="card-imagem-conteudo">
+          </article>
+          <section class="curiosidade curiosidade-plastico" id="acoescoletivasBox">
+            <h3>Participar ou organizar um mutirão de limpeza é uma ação direta e tangível para preservar esses lugares seguros que a vida marinha precisa para crescer e sobreviver.</h3>
+            <p> ▪️ Participe de limpezas de praias, manguezais ou margens de rios. O mutirão de limpeza é muito mais do que recolher lixo; é um ato de Ciência Cidadã.</p>
+            <p> ▪️ Em vez de apenas recolher, separe e categorize o lixo (plásticos, metais, bitucas, etc.). Use aplicativos ou planilhas de ONGs para registrar os dados.</p>
+            <p> ▪️ Apoie e cobre melhorias no sistema de saneamento básico da sua cidade (tratamento de esgoto).</p>
+          </section>
+      
+
+          <!-- CARD 2 -->
+          <article class="card" onclick="mostrarCuriosidade('apoioiniciativasBox')">
+            <div class="card-icone">🤝</div>
+              <h2>Apoio a iniciativas locais</h2>
+            <ul>
+              <li>Comprar produtos de quem respeita o meio ambiente.</li>
+              <li>Apoiar projetos comunitários e ONGs da região.</li>
+              <li>Apoio à Pesca Sustentável</li>
+            </ul>
+          </article>
+          <article class="card imagem-card"> 
+            <img src="pesca.jpg" alt="Exemplo de pesca sustentavel" class="card-imagem-conteudo">
+          </article>
+          <section class="curiosidade curiosidade-descarte" id="apoioiniciativasBox">
+            <h3>Ao apoiar empresas que adotam práticas de pesca sustentável, você contribui para a preservação das populações de peixes e do equilíbrio ecológico. </h3>
+            <p> ▪️ Procure ONGs locais que realizam plantio de mudas de mangue ou restauração de restingas. O trabalho de restauração é manual e gratificante. Você estará ajudando a reconstruir o habitat e a fortalecer a barreira natural contra a erosão costeira.</p>
+            <p> ▪️ Consuma peixes e frutos do mar de origem certificada e pesca sustentável, respeitando os períodos de defeso (época de reprodução). Apoiar pescadores que seguem as normas ajuda a garantir que os estoques de peixes nos berçários marinhos não sejam esgotados e que a vida marinha tenha tempo para se reproduzir.</p>
+            <p> ▪️ Ajude a promover iniciativas de ecoturismo de base comunitária ou artesanato feito com materiais sustentáveis pelas famílias dos pescadores.</p>
+          </section>
+      
+          <!-- CARD 3 -->
+          <article class="card" onclick="mostrarCuriosidade('participacaoBox')">
+            <div class="card-icone">🗣️</div>
+              <h2>Participação em conselhos e audiências públicas</h2>
+            <ul>
+              <li>Incentivar a acompanhar decisões sobre ocupação de áreas costeiras.</li>
+              <li>Monitore e fiscalize.</li>
+              <li>Divulgar canais para denúncias de crimes ambientais</li>
+            </ul>
+          </article>
+          <article class="card imagem-card"> 
+            <img src="participacao.jpg" alt="Exemplo de audiências" class="card-imagem-conteudo">
+          </article>
+          <section class="curiosidade curiosidade-consumo" id="participacaoBox">
+            <h3>A participação ativa em conselhos e audiências públicas é uma ferramenta democrática essencial para a proteção dos berçários marinhos. Ela permite que a sociedade civil monitore e influencie as decisões que afetam diretamente o futuro das áreas costeiras.</h3>
+            <p> ▪️ Em audiências, defenda a criação ou o fortalecimento de Reservas Extrativistas (RESEX) ou Áreas de Proteção Ambiental (APAs) em torno dos berçários críticos.</p>
+            <p> ▪️ Junte-se a grupos que monitoram ninhos de tartarugas ou a saúde de estuários.</p>
+            <p> ▪️ Relate a presença de fauna ameaçada (peixe-boi, aves costeiras) ou de situações de risco (derramamentos, pesca ilegal) às autoridades competentes (órgãos ambientais ou Marinha).</p>
+          </section>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Berçários Azul — Protegendo os ecossistemas marinhos</p>
+    </footer>
+
+    <script src="cidade.js"></script>
+
+</body>
+</html>
+

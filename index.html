@@ -29,6 +29,78 @@
         </section>
     </div> 
 
+    <section>
+        <div class="carrossel">
+            <div class="carrossel-texto">
+                <h1>"Berçários do mar, futuro do planeta"</h1>
+            </div>
+
+            <div class="slide slide-ativa">
+                <img src="/img/secao1_recife_de_corais.png" alt="Recifes de Coral">
+            </div>
+            <div class="slide">
+                <img src="/img/secao1_manguezais.png" alt="Manguezais">
+            </div>
+            <div class="slide">
+                <img src="/img/secao1_pradarias.png" alt="Pradaria">
+            </div>
+            <div class="slide">
+                <img src="/img/secao1_estuários.png" alt="Recife de Coral">
+            </div>
+
+            <div class="indicadores">
+                <!-- data-indice guarda o índice do slide correspondente -->
+                <span class="bolinha bolinha-ativa" data-indice="0"></span>
+                <span class="bolinha" data-indice="1"></span>
+                <span class="bolinha" data-indice="2"></span>
+                <span class="bolinha" data-indice="3"></span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="secao-descubra">
+            <h2> Descubra como proteger os berçários marinhos</h2>
+            <p> Berçários marinhos são áreas onde muitos animais passam a “infância”. A boa notícia é que não é preciso ser biólogo ou trabalhar em uma ONG para ajudar a protegê-los: pequenas ações, em diferentes ambientes, fazem grande diferença. </p>
+            <h6>Escolha seu contexto e descubra por onde começar:</h6>
+        </div>
+        <div class="infografico-sequencia">
+            <a href="pag/casa/casa.html">
+                <div class="passo" id="casa">
+                    <span class="icone">🏠</span>
+                    <p>CASA</p>
+                </div>
+            </a>
+            <div class="conector">
+                →
+            </div>
+            <a href="pag/praia/praia.html">
+                <div class="passo" id="praia">
+                    <span class="icone">🏖️</span>
+                    <p>PRAIA</p>
+                </div>
+            </a>
+            <div class="conector">
+                →
+            </div>
+            <a href="pag/escola/escola.html">
+                <div class="passo" id="escola">
+                    <span class="icone">📚</span>
+                    <p>ESCOLA</p>
+                </div>
+            </a>
+            <div class="conector">
+                →
+            </div>
+            <a href="pag/cidade/cidade.html">
+                <div class="passo" id="cidade">
+                    <span class="icone">🏙️</span>
+                    <p>CIDADE</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
     <section class="conheca-mais">
             <div class="container-full"> 
                 <div>
@@ -127,9 +199,11 @@
 
 </main>
 
-    <footer class="footer">
-        <p>© 2025 Berçários Azul — Educação e curiosidades sobre ambientes marinhos.</p>
-    </footer>
+<footer class="footer">
+    <p>© 2025 Berçários Azul — Educação e curiosidades sobre ambientes marinhos.</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
