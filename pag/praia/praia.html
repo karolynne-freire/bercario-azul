@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berçários Azul</title>
+    <link rel="stylesheet" href="praia.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Berçários Azul</div>
+        <ul class="nav-links">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Ambientes</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+      <h1>Na praia, rios e manguezais</h1>
+      <p class="subtitulo">Turismo responsável</p>
+
+      <section class="cards-container">
+        <div class="content-block">
+
+          <!-- CARD 1 -->
+          <article class="card" onclick="mostrarCuriosidade('lixozeroBox')">
+            <div class="card-icone">🗑️</div>
+              <h2>Lixo Zero em Ambientes Naturais</h2>
+              <ul>
+                <li>O que você trouxe, vai com você de volta.</li>
+                <li>Conheça e Respeite as Regras Locais.</li>
+                <li>Use os Coletores Corretos (Se Existirem).</li>
+              </ul>
+          </article>
+            <article class="card imagem-card"> 
+          <img src="Lixo.jpg" alt="Exemplo de lixo zero" class="card-imagem-conteudo">
+          </article>
+          <section class="curiosidade curiosidade-plastico" id="lixozeroBox">
+            <h3> O lixo deixado por turistas não gera apenas um problema ambiental, mas também um custo econômico.</h3>
+            <p> ▪️ Tudo o que você leva para um ambiente natural, você deve trazer de volta, incluindo resíduos orgânicos, que demoram a se decompor e alteram a dieta local.</p>
+            <p> ▪️ Em algumas áreas de preservação, existem regras específicas sobre o que pode e não pode ser levado</p>
+            <p> ▪️ "Lixo Fantasma": Em ambientes marinhos, o maior problema não são apenas as embalagens. Redes de pesca e linhas abandonadas (o chamado lixo fantasma) continuam a aprisionar e matar peixes, tartarugas e mamíferos marinhos por décadas, mesmo após serem descartadas.</p>
+          </section>
+      
+          <!-- CARD 2 -->
+          <article class="card" onclick="mostrarCuriosidade('areassensiveisBox')">
+            <div class="card-icone">🛑</div>
+              <h2>Respeitar áreas sensíveis</h2>
+              <ul>
+                <li>Não pisar em mangues, pradarias marinhas ou recifes rasos.</li>
+                <li>Não arrancar plantas, corais ou animais “para tirar foto ou levar como lembrança”.</li>
+                <li>Evite barulhos excessivos</li>
+              </ul>
+          </article>
+          <article class="card imagem-card"> 
+            <img src="turismo_responsável.jpg" alt="Exemplo de áreas sensíveis" class="card-imagem-conteudo">
+          </article>
+          <section class="curiosidade curiosidade-descarte" id="areassensiveisBox">
+            <h3>Ecossistemas como mangues, pradarias marinhas e recifes rasos são berçários da vida aquática e atuam como filtros naturais e barreiras de proteção costeira.</h3>
+            <p> ▪️ A "Respiração" do Mangue: Ao pisar ou compactar a lama dos manguezais, você pode sufocar as raízes e matar a árvore. A destruição do mangue torna a costa mais vulnerável à erosão e inundações.</p>
+            <p> ▪️ A Fragilidade dos Recifes: Pisar neles destrói um habitat vital.</p>
+            <p> ▪️ As pradarias marinhas atuam como uma esponja natural, filtrando a água  e servindo de alimento e refúgio para peixes-boi, tartarugas e juvenis de peixes. Ao caminhar sobre elas, você as arranca ou danifica, comprometendo essa função.</p>
+            <p> ▪️ Barulhos excessivos (música alta em barcos ou caiaques, motores ruidosos) podem interferir na comunicação, na caça e na reprodução de animais marinhos.</p>
+          </section>
+      
+          <!-- CARD 3 -->
+          <article class="card" onclick="mostrarCuriosidade('veiculosBox')">
+            <div class="card-icone">🚗</div>
+              <h2>Cuidado com veículos na orla</h2>
+              <ul>
+                <li>Destruição da Fauna Micro e Invertebrada</li>
+                <li>Ameaça a Espécies de Desova</li>
+                <li>Contaminação Química</li>
+                <li>Danos à Vegetação de Restinga</li>
+              </ul>
+          </article>
+          <article class="card imagem-card"> 
+            <img src="carro.jpg" alt="Exemplo de veículos" class="card-imagem-conteudo">
+          </article>
+          <section class="curiosidade curiosidade-consumo" id="veiculosBox">
+            <h3>Carros e motos motorizados na faixa de areia são extremamente prejudiciais.</h3>
+            <p> ▪️ A circulação de veículos compacta a areia, o que pode destruir ninhos de tartarugas marinhas e ovos de aves costeiras.</p>
+            <p> ▪️ A restinga é a vegetação que cresce na areia (dunas), ao destruí-la, o mar avança, causando a diminuição da faixa de areia e colocando em risco estruturas urbanas.</p>
+            <p> ▪️ Pneus de veículos criam sulcos profundos na areia que podem alterar o fluxo de água das marés e dificultar o movimento de pequenos animais, como caranguejos. Além disso, veículos deixam na areia resíduos tóxicos (óleo, combustível e fluidos) que contaminam o solo e a água.</p>
+          </section>
+    
+          <!-- CARD 4 -->
+          <article class="card" onclick="mostrarCuriosidade('veiculosAquaticosBox')">
+            <div class="card-icone">🚤</div>
+              <h2>Cuidado com veículos aquáticos</h2>
+              <ul>
+                <li>Evitar o derramamento de óleo e combustível durante o abastecimento e a manutenção.</li>
+                <li>Evitar ancorar sobre recifes de corais, algas e berçários marinhos</li>
+                <li>Reduzir a velocidade em áreas conhecidas pela presença de mamíferos marinhos</li>
+                <li>Evitar velocidade excessiva perto da costa ou de outras embarcações pequenas</li>
+              </ul>
+          </article>
+          <article class="card imagem-card"> 
+            <img src="veiculos_aquaticos.jpg" alt="Exemplo de veículos aquáticos" class="card-imagem-conteudo">
+          </article>
+          <section class="curiosidade curiosidade-consumo" id="veiculosAquaticosBox">
+            <h3> O uso de barcos, lanchas e jet skis exige responsabilidade para proteger os ecossistemas aquáticos sensíveis (praias, rios e manguezais).</h3>
+            <p> ▪️ A alta velocidade das embarcações gera marolas que causam erosão acelerada nas margens de rios e manguezais, destruindo a vegetação ribeirinha e o habitat de animais como caranguejos e peixes juvenis.</p>
+            <p> ▪️ A velocidade excessiva aumenta o risco de colisão com animais marinhos (tartarugas, golfinhos, peixes-boi), podendo causar ferimentos graves ou fatais. Siga rigorosamente os limites de velocidade estabelecidos pela Marinha.</p>
+            <p> ▪️ Evite ancorar em recifes de coral ou pradarias marinhas. O peso da âncora destrói essas formações vitais. Ancore sempre em fundos de areia ou utilize boias de amarração. Além disso, as hélices das embarcações podem ferir animais e destruir a vegetação em águas rasas.</p>
+            <p> ▪️ Motores ruidosos causam poluição sonora que interfere na comunicação e navegação de mamíferos marinhos (como os golfinhos). Vazamentos de óleo e combustível criam uma película tóxica na água, intoxicando a fauna e sufocando o ecossistema do manguezal.</p>
+          </section>
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Berçários Azul — Protegendo os ecossistemas marinhos</p>
+    </footer>
+
+    <script src="praia.js"></script>
+
+</body>
+</html>
+
