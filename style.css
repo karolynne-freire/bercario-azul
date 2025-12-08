@@ -52,13 +52,13 @@ main{
 
 .container-sobre {
     width: 100%;
-    padding: 0 20px; 
+    padding: 0px 20px; 
     margin: 0 auto;
 }
 
 #sobre {
     background-color: white;
-    padding: 30px;
+    padding: 20px;
     margin-top: 30px;
     margin-bottom: 25px;
     border-radius: 12px;
@@ -330,7 +330,7 @@ p {
 .conheca-mais {
     background-color: #90caf9; 
     color: #0C0B59;
-    padding: 50px 0;
+    padding: 30px 0;
     margin-top: 50px;
     margin-bottom: 0;
     border-radius: 0; 
@@ -339,9 +339,9 @@ p {
 
 .container-full {
     width: 100%;
-    padding: 0 20px; 
+    padding: 20px; 
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1530px;
     display: grid;
     grid-template-columns: 1fr; 
     gap: 40px;
@@ -349,19 +349,20 @@ p {
 }
 
 .container-recife {
-    padding: 0;
-    margin: 0;
     overflow: hidden; 
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     justify-self: center; 
+    max-height: 250px;
 }
 
 .container-recife img {
     width: 100%;
-    height: auto;
+    height: 100%; 
     display: block;
-    border-radius: 12px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    max-width: 100%;
 }
 
 .conheca-mais h3 {
@@ -493,7 +494,7 @@ p {
     padding: 40px; 
     border-radius: 12px;
     margin: 40px auto; 
-    max-width: 800px; 
+    max-width: 861px; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-top: 5px solid #141284; 
 }
@@ -563,11 +564,15 @@ p {
 
 @media (min-width: 768px) {
     .container-full {
-        grid-template-columns: 60% 40%; 
+        grid-template-columns: 1fr 1fr; 
     }
     
-    .conheca-mais h3, .conheca-mais p {
+    .conheca-mais h3 {
         text-align: left; 
+    }
+
+    .conheca-mais p {
+        text-align: justify;
     }
     
     .cta-wrapper {

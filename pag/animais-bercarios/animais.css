@@ -13,13 +13,43 @@
     font-family: "Arial", sans-serif;
 }
 
-body {
+html, body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
     background-image: url(img/fundo-pagina.jpg);
     color: var(--cor-texto);
     line-height: 1.6;
+}
+
+.navbar {
+    width: 100%;
+    padding: 15px 40px;
+    background-color: #0C0B59; 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.navbar .nav-links li a:hover {
+    color: #90caf9; 
 }
 
 main {
