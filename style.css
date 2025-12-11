@@ -341,7 +341,7 @@ p {
     width: 100%;
     padding: 20px; 
     margin: 0 auto;
-    max-width: 1530px;
+    max-width: 1500px;
     display: grid;
     grid-template-columns: 1fr; 
     gap: 40px;
@@ -386,7 +386,7 @@ p {
     background-color: #141284; 
     color: white; 
     padding: 15px 20px;
-    border-radius: 50px;
+    border-radius: 6px;
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 1px;
@@ -551,7 +551,7 @@ p {
     padding: 12px 30px;
     border: none;
     border-radius: 6px;
-    font-weight: 700;
+    font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s ease;
     display: block; 
