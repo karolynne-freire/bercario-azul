@@ -118,13 +118,15 @@ h1 {
 
 /* card de texto */
 .card {
-   background: #0C0B59;
+    background: #0C0B59;
     border-radius: 12px; 
     padding: 20px 24px; 
     color: #FFFFFF; 
     box-shadow: 0 8px 16px rgba(12, 11, 89, 0.2); 
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-icone {
@@ -182,6 +184,25 @@ h1 {
     height: 100%;
     display: block;
     object-fit: cover;
+}
+
+.btn-saiba-mais {
+    margin-top: auto;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: #FFFFFF;  /* mesma cor dos títulos */
+    color: #0C0B59;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    align-self: center;  /* opcional: centraliza o botão */
+}
+
+.btn-saiba-mais:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 /* Curiosidades */

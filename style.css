@@ -175,7 +175,7 @@ main{
     background-color: #141284;     
 }
 
-/* ============ SESSÃO 2 ============ */
+/* ============ SESSÃO 2 DESCUBRA ============ */
 
 /* Título + texto */
 .secao-descubra{
@@ -213,14 +213,17 @@ main{
 .infografico-sequencia {
     display: flex;
     flex-direction: column;  
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
     gap: 25px;
-    padding: 16px;
+    padding: 16px 0;
     width: 100%;
-    border-radius: 5px;
-    border-left: 10px solid #0C0B59;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    max-width: 900px; 
+    margin: 0 auto 30px auto;
+    border-radius: 0;
+    border-left: none;
+    box-shadow: none;
+    background: transparent;
 }
 
 .infografico-sequencia a {
@@ -239,7 +242,7 @@ main{
     border: 3px solid transparent;
     background-color: #3736A3;
     color: #FFFFFF;
-    width: 80%;
+    width: 200px;
     min-width: 100px;
     min-height: 90px;
     margin: 0 auto;
@@ -299,12 +302,13 @@ p {
 /* Coloca os cards em linha e mostra os conectores */
 @media (min-width: 768px) {
     .infografico-sequencia {
-      
         display: grid;
-        grid-template-columns: 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr;
-        gap: 0; 
+        grid-template-columns: repeat(7, auto);
+        justify-content: center;             
+        align-items: center;
+        gap: 10px;
         padding: 30px 20px;
-        border-left: none; 
+        border-left: none;
     }
     
     .infografico-sequencia a {
@@ -326,7 +330,6 @@ p {
         text-align: center;
     }
 }
-
 .conheca-mais {
     background-color: #90caf9; 
     color: #0C0B59;
