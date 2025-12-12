@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berçários Azul</title>
+    <link rel="stylesheet" href="casa.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Berçários Azul</div>
+        <ul class="nav-links">
+            <li><a href="../../index.html">Início</a></li>
+            <li><a href="../../index.html#ambiente">Ambientes</a></li>
+            <li><a href="../../index.html#sobre">Sobre</a></li>
+            <li><a href="../../index.html#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+      <h1>Em casa: atitudes do dia a dia</h1>
+      <p class="subtitulo">Comece pela sua rotina</p>
+
+      <section class="cards-container">
+
+        <div class="content-block">
+      
+          <!-- CARD 1 -->
+          <article class="card">
+            <div class="card-icone">♻️</div>
+              <h2>Reduzir plásticos descartáveis</h2>
+            <ul>
+              <li>Evitar copos, talheres e sacolas descartáveis.</li>
+              <li>Usar garrafa reutilizável.</li>
+              <li>Organizar um "canto da reciclagem" em casa.</li>
+            </ul>
+            <button class="btn-saiba-mais" onclick="mostrarCuriosidade('plasticoBox')">
+              Saiba mais
+            </button>
+          </article>
+          <article class="card imagem-card"> 
+            <img src="reduzir_plasticos.jpg" alt="Exemplo de redução de plásticos" class="card-imagem-conteudo">
+          </article>
+          <section class="curiosidade curiosidade-plastico" id="plasticoBox">
+            <h3>A redução do consumo de plásticos descartáveis é uma das ações individuais mais importantes para proteger os berçários marinhos.</h3>
+            <p> Quanto tempo o plástico leva para se decompor?</p>
+            <p> Apenas 25% do plástico produzido no mundo é reciclado, fazendo com que grandes quantidades acabem nos oceanos.</p>
+            <p>Esse material pode levar séculos para se decompor: enquanto um saco plástico leva cerca de 20 anos, um copo de espuma 50 anos, um canudo 200 anos, garrafas PET e fraldas descartáveis 450 anos e linhas de pesca até 600 anos, segundo estimativas.</p>
+          </section>
+
+          <!-- CARD 2 -->
+          <article class="card">
+            <div class="card-icone">🗑️</div>
+              <h2>Descarte correto de resíduos</h2>
+            <ul>
+              <li>Óleo de cozinha: armazenar em garrafa e levar para pontos de coleta.</li>
+              <li>Medicamentos vencidos: nunca jogar no lixo comum ou vaso sanitário.</li>
+              <li>Pilhas e baterias: levar a pontos de coleta.</li>
+              <li>Cigarro: não jogue na rua.</li>
+            </ul>
+            <button class="btn-saiba-mais" onclick="mostrarCuriosidade('descarteBox')">
+              Saiba mais
+            </button>
+          </article>
+          <article class="card imagem-card"> 
+            <img src="descarte_correto.jpg" alt="Exemplo de descarte correto" class="card-imagem-conteudo">
+          </article>
+          <section class="curiosidade curiosidade-descarte" id="descarteBox">
+            <h3>O descarte incorreto de resíduos é uma das principais ameaças que causam a degradação e a perda de áreas de berçários marinhos, sendo essencial adotar práticas responsáveis.</h3>
+            <p> ▪️ Descartar o óleo na pia, além de poluir, causa o entupimento das tubulações domésticas e das redes de esgoto, já que ele se solidifica ao esfriar e acumula sujeira.</p>
+            <p> ▪️ Jogar medicamentos no lixo comum ou no vaso sanitário faz com que os componentes químicos contaminem o solo e a água.</p>
+            <p> ▪️ Pilhas e baterias contêm metais pesados e tóxicos, como cádmio, chumbo, mercúrio e níquel. Se descartadas no lixo comum, elas se rompem no aterro e liberam esses metais, contaminando o solo, a água e lençóis freáticos.</p>
+            <p> ▪️ Cigarros também prejudicam os oceanos: seus filtros contêm milhares de substâncias químicas capazes de matar peixes de água doce e marinha.</p>
+          </section>
+
+          <!-- CARD 3 -->
+          <article class="card">
+            <div class="card-icone">💧</div>
+              <h2>Consumo Consciente: Água, Energia e Pegada de Carbono</h2>
+            <ul>
+              <li>Reduzir desperdício de água → menos esgoto indo para rios e mares.</li>
+              <li>Economizar energia → menos pressão por geração em fontes que impactam ecossistemas.</li>
+              <li>Pegada de carbono → Diminua</li>
+            </ul>
+            <button class="btn-saiba-mais" onclick="mostrarCuriosidade('impactoBox')">
+              Saiba mais
+            </button>
+          </article>
+          <article class="card imagem-card"> 
+            <img src="energia_água_pegada_de_carbono.png" alt="Exemplo de redução de água, energia e pegada de carbono" class="card-imagem-conteudo">
+          </article>
+          <section class="curiosidade curiosidade-consumo" id="impactoBox">
+            <h3>Adotar um consumo consciente de recursos e reduzir água, energia e sua pegada de carbono são ações essenciais que, embora pareçam distantes, impactam diretamente a saúde e a proteção dos berçários marinhos.</h3>
+            <p> ▪️ Ao economizar água, você não apenas preserva um recurso precioso, mas também reduz o volume de esgoto que precisa ser tratado.</p>
+            <p> ▪️ Economizar energia em casa diminui a demanda global por eletricidade.</p>
+            <p> ▪️ Diminuir a pegada de carbono ajuda a proteger os oceanos: Os oceanos, que absorvem mais de 25% do CO₂ emitido e acabam ficando mais ácidos, ameaçando muitas espécies marinhas. Cada pessoa pode contribuir usando bicicleta ou transporte público, priorizando fontes renováveis e fazendo escolhas de consumo mais conscientes.</p>
+          </section>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Berçários Azul — Protegendo os ecossistemas marinhos</p>
+    </footer>
+
+    <script src="casa.js"></script>
+
+</body>
+</html>
+
